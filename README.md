@@ -8,7 +8,7 @@ This GitHub repository contains:
 - A LaTeX project report
 
 Website: [https://namanpreet-create.github.io/portfolio](https://namanpreet-create.github.io/portfolio)  
-CV: [`cv/LuxSleek_CV.pdf`](cv/namanpreet_kaur_cv.pdf)  
+CV: [`cv/namanpreet_kaur_cv.pdf`](cv/namanpreet_kaur_cv.pdf)  
 Python Project: [`python_project/basic_plot.py`](python_project/basic_plot.py)  
 
 ## How to Compile the Report
