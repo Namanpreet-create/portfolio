@@ -1,0 +1,130 @@
+\documentclass[11pt,a4paper]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[top=0.6in, bottom=0.6in, left=0.7in, right=0.7in]{geometry}
+\usepackage{titlesec}
+\usepackage{enumitem}
+\usepackage{hyperref}
+\usepackage{parskip}
+\usepackage{graphicx}
+\usepackage{xcolor}
+\usepackage{array}
+\usepackage{tabularx}
+
+% Colors
+\definecolor{primary}{RGB}{41, 128, 185}
+\definecolor{secondary}{RGB}{52, 73, 94}
+\definecolor{accent}{RGB}{149, 165, 166}
+\definecolor{lightgray}{RGB}{245, 245, 245}
+
+% Formatting
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{3pt}
+
+\hypersetup{
+    colorlinks=true,
+    linkcolor=primary,
+    urlcolor=primary,
+    citecolor=primary
+}
+
+\titleformat{\section}{\large\bfseries\color{primary}}{}{0em}{}[\titlerule]
+\titleformat{\subsection}[runin]{\bfseries\color{secondary}}{}{0em}{}[.]
+
+\newcommand{\cventry}[4]{
+    \textbf{#1} \hfill \textcolor{accent}{#2} \\
+    \textit{#3} \\
+    #4
+    \vspace{4pt}
+}
+
+\newcommand{\educationentry}[3]{
+    \textbf{#1} \hfill \textcolor{accent}{#2} \\
+    \textit{#3}
+    \vspace{3pt}
+}
+
+% Begin Document
+\begin{document}
+
+% Header
+\noindent
+\begin{minipage}[c]{0.23\textwidth}
+    \includegraphics[width=3.2cm, height=3.2cm, keepaspectratio]{image.jpg}
+\end{minipage}
+\hfill
+\begin{minipage}[c]{0.72\textwidth}
+    \textcolor{primary}{\Huge \textbf{Namanpreet Kaur}}\\[3pt]
+    \textcolor{secondary}{\large Computer Science Student \& Data Professional}\\[6pt]
+    Karl-Marx-Strasse 78, Berlin 12043, Germany \\
+    \texttt{Namanpreety7754946@gmail.com} \quad | \quad +49 1573 515 3939
+\end{minipage}
+
+\vspace{6pt}
+
+\begin{minipage}[t]{0.63\textwidth}
+    \section*{Professional Profile}
+    Energetic and customer-focused professional with hands-on experience in sales and quick service environments. Skilled in engaging with customers, identifying their needs, and delivering fast, friendly service. Known for a positive attitude, strong communication, and a team-first mindset.
+
+    \section*{Experience}
+    \cventry{Data Operator}{Sep 2023 – Sep 2024}{Shri Saras Limited, Haryana, India}{
+        \begin{itemize}[noitemsep, leftmargin=12pt]
+            \item Maintained large volumes of data with 99.5\% accuracy
+            \item Ensured data integrity via regular quality checks
+            \item Collaborated with cross-functional teams
+            \item Handled confidential information securely
+            \item Used MS Excel and Word for data reporting
+        \end{itemize}
+    }
+
+    \section*{Education}
+    \educationentry{B.Sc. in Computer Science (Ongoing)}{Present}{GISMA University of Applied Sciences, Berlin}
+    
+    \educationentry{Higher Secondary (12th), Non-Medical}{2023}{New Happy Public School, India}
+    
+    \educationentry{Secondary Education (10th)}{2021}{New Happy Public School, India}
+
+    \section*{Certifications}
+    \educationentry{Basics of Computer \& C Language}{2024}{Harton Computer Institute, India}
+    
+    \educationentry{Diploma in Hair Designing}{2024–2025}{Orane Institute of Beauty and Wellness}
+    \begin{itemize}[noitemsep, leftmargin=12pt]
+        \item Cutting, Styling, Color Theory, Chemical Work
+    \end{itemize}
+
+\end{minipage}%
+\hfill
+\begin{minipage}[t]{0.34\textwidth}
+    \section*{Skills}
+    \begin{itemize}[noitemsep, leftmargin=10pt]
+        \item C Language, Python, HTML, CSS
+        \item Problem Solving, Time Management
+        \item Attention to Detail, Multitasking
+        \item Adaptability, Communication
+    \end{itemize}
+
+    \section*{Languages}
+    \begin{tabular}{ll}
+        English & C2 (Proficient) \\
+        Hindi & Native \\
+        Punjabi & Native \\
+        German & A2 (Elementary)
+    \end{tabular}
+
+    \vspace{8pt}
+    \section*{Personal Info}
+    \begin{tabular}{ll}
+        Citizenship: & India \\
+        Status: & Single
+    \end{tabular}
+
+    \vspace{8pt}
+    \section*{Interests}
+    \begin{itemize}[noitemsep, leftmargin=10pt]
+        \item K-POP Music
+        \item Biographies \& Novels
+        \item Hair Styling and Design
+    \end{itemize}
+
+\end{minipage}
+
+\end{document}
